@@ -1,146 +1,505 @@
-<script setup lang="ts">
-import { getRoutes } from '@/plugins/router'
-import { SwitchIcon } from 'vue-dark-switch'
-
-const { te, t } = useI18n()
-
-const routes = getRoutes()
-	.filter((r) => !r.path.includes('notFound'))
-	.map((r) => {
-		let { path, name } = r
-		if (path === safeResolve('/')) {
-			return { path, name: 'home' }
-		}
-
-		if (!name) {
-			name = path
-		}
-
-		return { path, name: name.toString().slice(1).replaceAll('/', ' · ') }
-	})
-
-const $route = useRoute()
-</script>
-
 <template>
-	<nav
-		aria-label="Site Nav"
-		class="mx-auto h-80px max-w-3xl flex items-center justify-between p-4"
-	>
-		<div class="flex items-center justify-center space-x-5">
-			<SwitchIcon unmount-persets />
-			<a href="https://pc.dishait.cn/" target="_blank">
-				<span
-					style="
-						color: white;
-						font-size: 14px;
-						border-radius: 3px 0 0 3px;
-						padding: 4px 4px 4px 4px;
-						background: #00b894;
-					"
-					>帝莎编程</span
-				>
-				<span
-					style="
-						border-radius: 0 3px 3px 0;
-						padding: 5px 10px 5px 2px;
-						background: #00dc8220;
-						font-size: 13px;
-						color: rgba(37, 99, 235);
-					"
-				>
-					https://pc.dishait.cn/
-				</span>
-			</a>
+	<div class="header">
+		<div @click="handleGoHome">
+			<img class="logo" src="@/assets/lemon-8.png" alt="" />
+			<img class="beta" src="@/assets/beta.png" alt="" />
 		</div>
-
-		<ul class="flex items-center gap-2 text-sm font-medium">
-			<li v-for="r of routes" :key="r.path" class="hidden !block">
-				<RouterLink
-					class="rounded-lg px-3 py-2 hover:text-blue-700"
-					:class="$route.path === r.path ? 'text-blue-700' : ''"
-					:to="r.path"
-				>
-					{{ te(r.name) ? t(r.name) : r.name }}
-				</RouterLink>
-			</li>
-
-			<li>
-				<a
-					class="inline-flex items-center gap-2 rounded-lg px-3 py-2"
-					href="https://github.com/dishait/tov-template"
-					target="_blank"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-					>
-						<mask id="lineMdGithubLoop0" width="24" height="24" x="0" y="0">
-							<g fill="#fff">
-								<ellipse cx="9.5" cy="9" rx="1.5" ry="1" />
-								<ellipse cx="14.5" cy="9" rx="1.5" ry="1" />
-							</g>
-						</mask>
-						<g
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-						>
-							<path
-								stroke-dasharray="30"
-								stroke-dashoffset="30"
-								d="M12 4C13.6683 4 14.6122 4.39991 15 4.5C15.5255 4.07463 16.9375 3 18.5 3C18.8438 4 18.7863 5.21921 18.5 6C19.25 7 19.5 8 19.5 9.5C19.5 11.6875 19.017 13.0822 18 14C16.983 14.9178 15.8887 15.3749 14.5 15.5C15.1506 16.038 15 17.3743 15 18C15 18.7256 15 21 15 21M12 4C10.3317 4 9.38784 4.39991 9 4.5C8.47455 4.07463 7.0625 3 5.5 3C5.15625 4 5.21371 5.21921 5.5 6C4.75 7 4.5 8 4.5 9.5C4.5 11.6875 4.98301 13.0822 6 14C7.01699 14.9178 8.1113 15.3749 9.5 15.5C8.84944 16.038 9 17.3743 9 18C9 18.7256 9 21 9 21"
-							>
-								<animate
-									fill="freeze"
-									attributeName="stroke-dashoffset"
-									dur="0.6s"
-									values="30;0"
-								/>
-							</path>
-							<path stroke-dasharray="10" stroke-dashoffset="10" d="M9 19">
-								<animate
-									fill="freeze"
-									attributeName="stroke-dashoffset"
-									begin="0.7s"
-									dur="0.2s"
-									values="10;0"
-								/>
-								<animate
-									attributeName="d"
-									dur="3s"
-									repeatCount="indefinite"
-									values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
-								/>
-							</path>
-						</g>
-						<rect
-							width="8"
-							height="4"
-							x="8"
-							y="11"
-							fill="currentColor"
-							mask="url(#lineMdGithubLoop0)"
-						>
-							<animate
-								attributeName="y"
-								dur="10s"
-								keyTimes="0;0.45;0.46;0.54;0.55;1"
-								repeatCount="indefinite"
-								values="11;11;7;7;11;11"
-							/>
-						</rect>
-					</svg>
-				</a>
-			</li>
-
+		<div class="header-right">
+			<div class="icon-box abs" @click="handleShowFreeTips">
+				<img class="small-icon" src="@/assets/flash.png" alt="" />
+				<span>{{ t('lemonaidea_invite_entrance_web') }}</span>
+				<img
+					v-if="hasToken && clickShowRedBot"
+					class="small-icon-red"
+					src="@/assets/red.jpg"
+					alt=""
+				/>
+			</div>
+			<div class="icon-box" @click="handleOpenPrivacy">
+				<img class="small-icon" src="@/assets/privacy.jpg" alt="" />
+				<span>{{ $t('lemonaidea_privacy') }}</span>
+			</div>
+			<div class="icon-box" @click="handleGoToIns">
+				<img class="small-icon" src="@/assets/instagram.png" alt="" />
+				<span>Instagram</span>
+			</div>
+			<div class="icon-box" @click="showFeedBack = true">
+				<img class="small-icon" src="@/assets/mail.png" alt="" />
+				<span>{{ t('lemonaidea_feedback') }}</span>
+			</div>
 			<li class="hidden !block">
 				<Dropdown />
 			</li>
-		</ul>
-	</nav>
+			<div
+				v-if="!user?.user?.username"
+				class="login"
+				@click="router.push('/login')"
+			>
+				{{ $t('lemonaidea_login_btn_web') }}
+			</div>
+			<el-popover :visible="visible" placement="bottom" :width="212">
+				<template #reference>
+					<div
+						v-if="user?.user?.username"
+						class="user-header"
+						@click="visible = !visible"
+					>
+						{{ user?.user?.username?.slice(0, 1) ?? '' }}
+					</div>
+				</template>
+				<!-- <div v-else @click="router.push('/register')">
+        go login
+      </div> -->
+				<div
+					v-on-click-outside="closeModel"
+					class="inner"
+					@click="handleLogout"
+				>
+					<img src="@/assets/logout.jpg" alt="" />
+					<p>{{ $t('lemonaidea_logout') }}</p>
+				</div>
+			</el-popover>
+		</div>
+	</div>
+	<el-dialog
+		v-model="showFeedBack"
+		:title="t('lemonaidea_feedback')"
+		width="30%"
+		style="height: 300px"
+		class="basic_dialog"
+		center
+	>
+		<el-input
+			v-model="feedback"
+			:autosize="{ minRows: 5, maxRows: 5 }"
+			:resize="'none'"
+			type="textarea"
+		/>
+		<template #footer>
+			<span class="dialog-footer">
+				<!-- <el-button @click="showFeedBack = false">Cancel</el-button> -->
+				<el-button class="fb-but" type="primary" @click="handleSendFB">
+					{{ t('lemonaidea_feedback_confirm') }}
+				</el-button>
+			</span>
+		</template>
+	</el-dialog>
+	<el-dialog
+		v-model="showTips"
+		class="tips-dialog"
+		:title="t('lemonaidea_limited_free_title')"
+		width="30%"
+		style="height: 280px"
+		center
+	>
+		<p>{{ t('lemonaidea_login_alert_desc_c') }}</p>
+		<template #footer>
+			<span class="dialog-footer-tips">
+				<!-- <el-button @click="showFeedBack = false">Cancel</el-button> -->
+				<!-- <el-button class="fb-but" type="primary" @click="showTips = false">
+                      {{ t("lemonaidea_limited_free_btn") }}
+                    </el-button> -->
+				<el-button class="confirm_copy" type="default" @click="handleGoLogin">{{
+					$t('lemonaidea_login_alert_btn_go')
+				}}</el-button>
+				<p class="cancle" @click="showTips = !showTips">
+					{{ $t('cancel') }}
+				</p>
+			</span>
+		</template>
+	</el-dialog>
+	<router-view v-slot="{ Component }" :key="router.currentRoute.value.path">
+		<transition name="fade" mode="out-in">
+			<component :is="Component" />
+		</transition>
+	</router-view>
+	<!-- 已登录的tips弹窗--->
+	<LoginDialog></LoginDialog>
 </template>
+
+<script lang="ts" setup>
+let CLOSE = import('@/assets/close.png')
+import { sendFB, getUserPrivacy } from '@/api/index'
+import { ElMessage } from 'element-plus'
+import { useRouter } from 'vue-router'
+import { googleLogout } from 'vue3-google-login'
+import { useUserStore } from '@/store/modules/user'
+import { vOnClickOutside } from '@vueuse/components'
+import emitter from '@/utils/mitt'
+const date = new Date()
+
+const year = date.getFullYear()
+const month = date.getMonth()
+const day = date.getDate()
+const hour = date.getHours()
+const clickTime = computed(() => {
+	return window.localStorage.getItem('clickTime')
+})
+const clickShowRedBot = ref(false)
+const hasToken = computed(() => {
+	return JSON.stringify(userStore.getUserInfo) !== '{}' ? true : false
+})
+onMounted(() => {
+	let timeArr: any = clickTime.value?.split('-') ?? []
+	console.log(timeArr)
+	if (timeArr.length === 0) clickShowRedBot.value = true
+	if (month - timeArr[1] > 0) clickShowRedBot.value = false
+	if (day - timeArr[2] > 0 && hour - timeArr[3] === 0)
+		clickShowRedBot.value = false
+})
+const userStore = useUserStore()
+const buttonRef = ref()
+const popoverRef = ref()
+const visible = ref(false)
+const router = useRouter()
+const { t } = useI18n()
+const user = computed(() => {
+	return window.localStorage.getItem('user')
+		? JSON.parse(window.localStorage.getItem('user') ?? '')
+		: ''
+})
+const closeModel = () => {
+	visible.value = false
+}
+const showFeedBack = ref(false)
+const showTips = ref(false)
+const feedback = ref('')
+const handleSendFB = () => {
+	if (!feedback.value) return
+	sendFB({ feedback: feedback.value }, userStore.getLang)
+		.then((res) => {
+			if (res.errCode === 0) {
+				ElMessage({
+					message: res.errMsg,
+					type: 'success',
+				})
+			}
+		})
+		.finally(() => {
+			feedback.value = ''
+		})
+	showFeedBack.value = false
+}
+const handleGoToIns = () => {
+	window.open('https://www.instagram.com/lemonaidea')
+}
+const handleOpenPrivacy = () => {
+	router.push('/privacy')
+}
+const handleGoHome = () => {
+	router.push('/')
+}
+const handleClickUser = () => {}
+const handleLogout = () => {
+	window.localStorage.removeItem('user')
+	window.localStorage.removeItem('user_token')
+	window.localStorage.removeItem('user_profile')
+	visible.value = false
+	userStore.reset()
+	googleLogout()
+	location.reload()
+	userStore.setModel('3.5')
+}
+const handleGoLogin = () => {
+	showTips.value = false
+	router.push('/login')
+}
+const handleShowFreeTips = () => {
+	if (userStore.hasToken) {
+		emitter.emit('showLoginDialog')
+	} else {
+		showTips.value = true
+	}
+	if (!clickTime.value) {
+		let currentDate = `${year}-${month}-${day}-${hour} `
+		window.localStorage.setItem('clickTime', currentDate)
+		clickShowRedBot.value = false
+	}
+}
+</script>
+
+<style lang="scss" scoped>
+.header {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 8px;
+	width: calc(100% - 16px);
+	height: 64px;
+	border-radius: 44px;
+	border: 1px;
+	background-color: #fff;
+	padding: 0 12px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	.logo {
+		width: 156px;
+		height: 40px;
+		position: relative;
+		margin-left: 24px;
+		cursor: pointer;
+	}
+	.beta {
+		position: absolute;
+		width: 48px;
+		height: 20px;
+		top: 10px;
+		left: 184px;
+		padding: 2px 7px 2px 7px;
+		border-radius: 4px;
+	}
+	.header-right,
+	.icon-box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		cursor: pointer;
+		img {
+			width: 32px;
+			height: 32px;
+		}
+		span {
+			font-family: Poppins;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+	}
+	.hidden {
+		list-style: none;
+	}
+	.header-right {
+		.login {
+			display: flex;
+			height: 40px;
+			padding: 7px 16px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 32px;
+			background: #1d242f;
+			color: #fff;
+			font-family: Poppins;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+			/* 142.857% */
+			margin-left: 16px;
+		}
+	}
+	.icon-box {
+		margin-right: 24px;
+	}
+	.abs {
+		position: relative;
+	}
+	.small-icon-red {
+		position: absolute;
+		right: -10px;
+		top: 0;
+		width: 10px !important;
+		height: 10px !important;
+	}
+}
+
+.user-header {
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	margin-left: 16px;
+	padding: 0 10px;
+	background-color: #60696c;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	line-height: 40px;
+	text-align: center;
+}
+
+.basic_dialog {
+}
+
+.confirm_copy {
+	display: flex;
+	width: 285px;
+	height: 54px;
+	padding: 10px 26px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 16px;
+	background: #1d242f;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.cancle {
+	color: #909090;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 10px 26px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dialog-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.dialog-footer-tips {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.fb-but {
+	display: flex;
+	width: 258px;
+	height: 48px;
+	padding: 10px 26px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 16px;
+	background: #1e232d;
+	border: none;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.tips-dialog {
+	width: 590px;
+	height: 290px;
+	flex-shrink: 0;
+	border-radius: 24px;
+	background: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+	p {
+		color: #1d2331;
+		text-align: center;
+		font-family: Poppins;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+</style>
+
+<style lang="scss">
+.el-dialog--center {
+	width: 590px;
+	flex-shrink: 0;
+	border-radius: 24px;
+	background: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.el-dialog__header {
+	padding: 24px 0;
+}
+
+.el-dialog__headerbtn {
+	background: url('@/assets/close.png');
+	background-size: cover;
+	top: 24px;
+	right: 24px;
+	height: 24px;
+	width: 24px;
+	i {
+		display: none;
+	}
+}
+
+.el-dialog__body {
+	padding: 0 24px !important;
+}
+
+.el-dialog__title {
+	color: #656565;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 133.333% */
+}
+
+.inner {
+	display: flex;
+	height: 42px;
+	padding: 3px 8px !important;
+	align-items: center;
+	align-self: stretch;
+	border-radius: 3px;
+	background: #e9edf5;
+	cursor: pointer;
+	img {
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
+	p {
+		overflow: hidden;
+		color: #1d2331;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-family: Poppins;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		/* 142.857% */
+	}
+}
+</style>
+
+<style lang="scss">
+.el-textarea__inner {
+	border-radius: 8px;
+	background: #f6f7f5;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.el-dialog__footer {
+	position: absolute;
+	bottom: 24px;
+	padding: 0;
+	left: 0;
+	right: 0;
+}
+
+.el-popper {
+	height: 64px;
+	width: 212px;
+	padding: 8px 8px !important;
+}
+</style>

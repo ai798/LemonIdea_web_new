@@ -1,0 +1,137 @@
+# ja
+
+#login
+lemonaidea_slogan: 'Become Lemon8 Pro Now'
+lemonaidea_subtitle: 'Lemon8 クリエイターの第一選択'
+lemonaidea_login_google: 'Googleでサインイン'
+lemonaidea_feedback: 'フィードバック'
+
+#login:{
+lemonaidea_login_title_wb: 'おかえりなさい'
+lemonaidea_login: 'アカウントを追加する'
+lemonaidea_logout: 'ログアウト'
+#}
+
+#homepage
+lemonaidea_title_imitation: 'タイトル生成'
+lemonaidea_text_imitation: 'テキストの生成'
+lemonaidea_title_improve: 'タイトルの最適化'
+lemonaidea_text_improve: '本文の最適化'
+lemonaidea_desc_title_imitation: 'ワンクリックで Lemon8 の人気タイトルを素早く生成できます'
+lemonaidea_desc_text_imitation: 'ワンクリックで Lemon 8のコピーライティングを生成し、コピーして公開します'
+lemonaidea_desc_title_improve: 'タイトルをコピーして、ワンクリックですばやく最適化します'
+lemonaidea_desc_text_improve: 'あなたの作品をコピーして人気記事の生成に貢献してください'
+lemonaidea_btn_get_started: '作成を開始する'
+
+
+#fun_opt_title
+lemonaidea_title_imitation_edit_tips_a: '学びたい同じジャンルの人気のタイトルを入力してください (必須)'
+lemonaidea_title_imitation_edit_tips_b: 'ここにタイトルをコピーして貼り付けてください'
+lemonaidea_title_imitation_edit_tips_c: 'メモの種類を入力してください'
+lemonaidea_title_imitation_edit_tips_d: 'ここに入力してください'
+lemonaidea_btn_send: '送信'
+lemonaidea_title_imitation_result: '結果'
+lemonaidea_toast_copy_success: '正常にコピーされました'
+lemonaidea_change: 'それを変更'
+
+#fun_content_mock
+lemonaidea_text_imitation_edit_tips_a: '参考にしたい同種の人気コンテンツをご入力ください（必須）'
+lemonaidea_text_imitation_edit_tips_b: 'ここに内容をコピーして貼り付けてください'
+lemonaidea_text_imitation_edit_tips_c: 'メモの種類を入力してください'
+lemonaidea_text_imitation_edit_tips_d: 'ここに入力してください'
+lemonaidea_text_imitation_result: '結果'
+lemonaidea_btn_showall: '全て'
+
+ # fun_title_opt
+lemonaidea_title_improve_edit_tips_a: '最適化したいタイトル内容を入力してください（必須）'
+lemonaidea_title_improve_edit_tips_b: 'ここにタイトルをコピーして貼り付けてください'
+
+ # fun_content_opt
+lemonaidea_text_improve_edit_tips_a: '最適化したい記事コンテンツを入力してください (必須)'
+lemonaidea_text_improve_edit_tips_b: 'ここに内容をコピーして貼り付けてください'
+
+ # limit_free
+lemonaidea_limited_free: '期間限定無料'
+lemonaidea_limited_free_title: '💡Tips'
+lemonaidea_limited_free_desc: '機能は一時的に無料で公開されており、機能に関するフィードバックを歓迎します。'
+lemonaidea_limited_free_btn: 'わかった'
+
+ # feedback
+lemonaidea_feedback_confirm: '確認する'
+
+  #chance{
+lemonaidea_tips_chance: '残り '
+lemonaidea_tips_chance_two: '回'
+  #}
+
+ # all
+lemonaidea_toast_fail: 'ネットワークエラー'
+
+#tabbar
+home: '首页'
+list: '列表'
+member: '我的'
+demo: '示例'
+
+ #language
+en: '英文'
+zh: '中文'
+
+introduction: '一个快速开发vue3的移动端模板'
+ # home
+support: '支持'
+cssMultiLanguage: 'css图片多语言'
+
+#list
+details: '列表详情'
+
+ # btn
+confirm: '确认'
+cancel: '取消'
+
+ # tologin_pop_up: {
+lemonaidea_login_alert_desc_a: 'ログインしていない場合、4.0モードに切り替えることはできません'
+lemonaidea_login_alert_desc_b: 'サインインしてさらに多くの機会を解放する'
+lemonaidea_login_alert_btn_go: 'ログインに進む'
+  # },
+lemonaidea_login_alert_desc_c: '使用回数を増やすには、Web サイトにログインしてください。ログインして友達を招待すると、20 ドル相当のバージョン 4.0 を使用する機会も得られます。'
+lemonaidea_invite_title: '4.0モードを無料でアンロック'
+lemonaidea_invite_alert_desc: '⚡️限定時間招待イベント:'
+lemonaidea_invite_alert_desc_one: '1. 友達を招待してログインに成功するたびに、あなたもその友達もGPT4.0を無料で使用できます '
+lemonaidea_invite_alert_desc_one_money: '（元の価格は$20/月です)'
+lemonaidea_invite_alert_desc_two: '2. 友達を招待するたびに、GPT4.0の日次使用回数が+10されます。最大10人の友達を招待できます。'
+lemonaidea_invite_desc_one: 'あなたの専用の招待リンク 🔗 '
+lemonaidea_invite_desc: 'Lemonaideaに来て、Lemon8ノート生成の魔法を体験してください。🔗'
+lemonaidea_invite_desc_left: ' を通じて登録し、ChatGPT4.0を無料で使用する'
+lemonaidea_invite_desc_outside: 'Lemonaideaに来て、Lemon8ノート生成の魔法を体験してください。🔗 '
+lemonaidea_invite_desc_outside_left: 'を通じて登録し、ChatGPT4.0を無料で使用する'
+lemonaidea_invite_copy: 'copy'
+lemonaidea_invite_link_login_subtitle: '💡登録成功後、あなたと'
+lemonaidea_invite_link_login_subtitle_two: ' はChat GPT4.0を無料で使用できます⚡️'
+
+#隐私
+lemonaidea_privacy: 'プライバシーポリシー'
+
+#验证码
+lemonaidea_login_code_sent_toast: '認証コードを送信しました'
+leomaidea_login_verify_expired: '認証コードが期限切れになりました'
+leomaidea_login_verify_error: '認証コードエラー'
+lemonaidea_login_subtitle: ' に送信されたコードを入力してください'
+lemonaidea_login_subtitle_left: '.'
+
+lemonaidea_login_title_web: 'Lemonaideaに参加'
+
+lemonaidea_login_btn_web: 'ログイン'
+
+lemonaidea_login_emailadress: 'メールアドレス'
+
+leomaidea_login_verify_code: '認証コード'
+
+lemonaidea_invite_entrance_web: 'GPT 4.0を無料で使用可能'
+
+lemonaidea_login_policy: '続行することで、Lemonaideaの '
+lemonaidea_login_policy_left: ' に同意したことになります。'
+
+lemonaidea_thinking: '考え...'
+
+lemonidea_feedback_notice: 'フィードバックを入力してください'

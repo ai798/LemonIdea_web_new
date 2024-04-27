@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</head>
 
-	<body>
-		<div id="app"></div>
-		<script type="module" src="/src/main.ts"></script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="./src/assets/lemon2.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		html {
+			background-color: #F3F4F1;
+			height: 100%;
+		}
+
+		html,
+		body,
+
+		#app {
+			height: 100%;
+		}
+
+		#app {
+			position: relative
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+	</style>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLLV414BGV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZLLV414BGV');
+
+	</script>
+	<script src="https://accounts.google.com/gsi/client" async defer onload="console.log('TODO: add onload function')">
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLLV414BGV"></script>
+	<!-- 资源文件,用于生产环境 -->
+	<!--preload-links-->
+</head>
+
+<body>
+	<div id="app"></div>
+	<!-- 入口js -->
+	<!-- <script type="module" src="/src/entry-client.ts"></script> -->
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

@@ -1,0 +1,139 @@
+# th
+
+#login
+lemonaidea_slogan: "Become Lemon8 Pro Now"
+lemonaidea_subtitle: "Pilihan pertama pencipta Lemon8"
+lemonaidea_login_google: "Masuk dengan Google"
+lemonaidea_feedback: "Umpan balik"
+
+#login:{
+lemonaidea_login_title_wb: "Selamat datang kembali"
+lemonaidea_login: "Tambahkan akun"
+lemonaidea_logout: "Keluar"
+#}
+
+#homepage
+lemonaidea_title_imitation: "Pembuatan Judul"
+lemonaidea_text_imitation: "Pembuatan Teks Badan"
+lemonaidea_title_improve: "Optimisasi Judul"
+lemonaidea_text_improve: "Optimisasi Teks Badan"
+lemonaidea_desc_title_imitation: "Bantu Anda dengan cepat menghasilkan judul populer Lemon8 dengan sekali klik"
+lemonaidea_desc_text_imitation: "Hasilkan teks populer Lemon8 dengan sekali klik"
+lemonaidea_desc_title_improve: "Salin judul Anda dan optimalkan dengan cepat dengan sekali klik"
+lemonaidea_desc_text_improve: "Salin teks Anda dan hasilkan konten populer"
+lemonaidea_btn_get_started: "Mulai Membuat"
+
+#fun_opt_title
+lemonaidea_title_imitation_edit_tips_a: "Silakan masukkan judul populer jenis yang ingin Anda pelajari (wajib)"
+lemonaidea_title_imitation_edit_tips_b: "Silakan salin dan tempelkan judul di sini  "
+lemonaidea_title_imitation_edit_tips_c: "Silakan masukkan jenis catatan Anda"
+lemonaidea_title_imitation_edit_tips_d: "Silakan masukkan di sini"
+lemonaidea_btn_send: "Kirim"
+lemonaidea_title_imitation_result: "Hasil"
+lemonaidea_toast_copy_success: "Berhasil disalin"
+lemonaidea_change:
+  "Ubah"
+
+  # fun_content_mock
+lemonaidea_text_imitation_edit_tips_a: "Silakan masukkan konten populer jenis yang ingin Anda lihat (wajib)"
+lemonaidea_text_imitation_edit_tips_b: "Silakan salin dan tempelkan teks di sini"
+lemonaidea_text_imitation_edit_tips_c: "Silakan masukkan jenis catatan Anda"
+lemonaidea_text_imitation_edit_tips_d: "Silakan masukkan di sini"
+lemonaidea_text_imitation_result: "Hasil"
+lemonaidea_btn_showall: "Semua"
+
+#fun_title_opt
+lemonaidea_title_improve_edit_tips_a: "Silakan masukkan konten judul yang ingin Anda optimalkan (wajib)"
+lemonaidea_title_improve_edit_tips_b: "Silakan salin dan tempelkan judul di sini"
+
+#fun_content_opt
+lemonaidea_text_improve_edit_tips_a: "Silakan masukkan konten yang ingin Anda optimalkan (wajib)"
+lemonaidea_text_improve_edit_tips_b: "Silakan salin dan tempelkan teks di sini"
+
+#limit_free
+lemonaidea_limited_free: "Gratis untuk waktu terbatas"
+lemonaidea_limited_free_title: "💡Tips"
+lemonaidea_limited_free_desc: "Fungsi sementara ini dibuka secara gratis, selamat datang untuk memberikan umpan balik tentang fitur."
+lemonaidea_limited_free_btn: "Mengerti"
+
+#feedback
+lemonaidea_feedback_confirm: "Konfirmasi"
+
+#chance{
+lemonaidea_tips_chance: ""
+lemonaidea_tips_chance_two: "kali tersisa"
+#}
+
+# all
+lemonaidea_toast_fail: "Kesalahan jaringan. Coba lagi, silakan."
+
+#tabbar
+home: "Home"
+list: "List"
+member: "Member"
+demo: "demo"
+
+#language
+en: "English"
+zh: "Chinese"
+
+introduction: "A rapid development vue3 of mobile terminal template"
+#home
+support: "support"
+cssMultiLanguage: "CSS picture multi-language"
+
+#list
+details: "list details"
+
+#btn
+confirm: "confirm"
+cancel: "Cancel"
+
+# tologin_pop_up: {
+lemonaidea_login_alert_desc_a: "Anda tidak dapat beralih ke mode 4.0 jika Anda belum masuk harap masuk terlebih dahulu."
+lemonaidea_login_alert_desc_b: "Masuk untuk membuka lebih banyak peluang"
+lemonaidea_login_alert_btn_go: "Pergi ke halaman masuk"
+# }
+lemonaidea_login_alert_desc_c: "Masuk ke situs web untuk mendapatkan lebih banyak kali penggunaan. Setelah masuk dan mengundang teman Anda juga dapat mendapatkan kesempatan untuk menggunakan versi 4.0 senilai $20!"
+
+lemonaidea_invite_title: "Buka mode 4.0 secara gratis"
+lemonaidea_invite_alert_desc: "⚡️Acara undangan terbatas:"
+lemonaidea_invite_alert_desc_one: "1. Setiap kali Anda mengundang seorang teman untuk masuk dengan sukses Anda semua dapat menggunakan GPT4.0 secara gratis (harga asli $20/bulan)"
+lemonaidea_invite_alert_desc_one_money: "(original price $20/month)"
+lemonaidea_invite_alert_desc_two: " 2. Setiap kali Anda mengundang seorang teman jumlah penggunaan GPT4.0 harian +10; Anda dapat mengundang hingga 10 teman"
+lemonaidea_invite_desc_one: "Your exclusive invitation link 🔗"
+lemonaidea_invite_desc: "Tautan undangan eksklusif Anda 🔗"
+lemonaidea_invite_desc_left: " dan gunakan ChatGPT4.0 secara gratis"
+lemonaidea_invite_desc_outside: "Datanglah ke Lemonaidea dan rasakan keajaiban pembuatan catatan Lemon8. Daftar melalui 🔗 "
+lemonaidea_invite_desc_outside_left: " dan gunakan ChatGPT4.0 secara gratis"
+lemonaidea_invite_copy: "Copy"
+lemonaidea_invite_link_login_subtitle: "💡Setelah pendaftaran berhasil baik Anda maupun "
+lemonaidea_invite_link_login_subtitle_two: " dapat menggunakan Chat GPT4.0 secara gratis⚡️"
+
+#隐私
+lemonaidea_privacy: "Kebijakan Privasi"
+
+#验证码
+lemonaidea_login_code_sent_toast: 'Kode verifikasi telah dikirim'
+leomaidea_login_verify_expired: 'Kode verifikasi telah kedaluwarsa'
+leomaidea_login_verify_error: 'Kesalahan kode verifikasi'
+lemonaidea_login_subtitle: 'Silakan masukkan kode yang dikirim ke '
+lemonaidea_login_subtitle_left: ''
+
+lemonaidea_login_title_web: 'Sertai Lemonaidea'
+
+lemonaidea_login_btn_web: 'Log masuk'
+
+lemonaidea_login_emailadress: 'Alamat Email'
+
+leomaidea_login_verify_code: 'Kode Verifikasi'
+
+lemonaidea_invite_entrance_web: 'Gunakan GPT4.0 secara percuma'
+
+
+lemonaidea_login_policy: "Dengan melanjutkan, Anda menyetujui "
+lemonaidea_login_policy_left: " Lemonaidea."
+
+lemonaidea_thinking: 'Berfikir...'
+
+lemonidea_feedback_notice: 'Sila masukkan maklum balas anda'

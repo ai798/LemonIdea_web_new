@@ -1,0 +1,136 @@
+# zh-cn
+
+#login
+lemonaidea_slogan: 'Become Lemon8 Pro Now'
+lemonaidea_subtitle: 'Lemon8創作者的第一選擇'
+lemonaidea_login_google: '使用 Google 登入'
+
+#login:{
+lemonaidea_login_title_wb: '歡迎回來'
+lemonaidea_login: '添加帳戶'
+lemonaidea_logout: '登出'
+#}
+#homepage
+lemonaidea_title_imitation: '標題生成'
+lemonaidea_text_imitation: '正文生成'
+lemonaidea_title_improve: '標題優化'
+lemonaidea_text_improve: '正文優化'
+lemonaidea_desc_title_imitation: '一鍵快速幫助你產生lemon8熱門標題'
+lemonaidea_desc_text_imitation: '一鍵產生lemon8文案，複製即可發布'
+lemonaidea_desc_title_improve: '複製您的標題，一鍵快速優化'
+lemonaidea_desc_text_improve: '複製您的作品，幫助生成熱門文章'
+lemonaidea_btn_get_started: '開始創作'
+
+ # fun_opt_title
+lemonaidea_title_imitation_edit_tips_a: '請輸入您想参考的同類型熱門標題（必填）'
+lemonaidea_title_imitation_edit_tips_b: '請複製並貼上標題至此處'
+lemonaidea_title_imitation_edit_tips_c: '請輸入您的筆記類型'
+lemonaidea_title_imitation_edit_tips_d: '請在此輸入'
+lemonaidea_btn_send: '傳送'
+lemonaidea_title_imitation_result: '結果'
+lemonaidea_toast_copy_success: '複製成功'
+lemonaidea_change: '換一換'
+
+
+ # fun_content_mock
+lemonaidea_text_imitation_edit_tips_a: '請輸入您想參考的同類型熱門內容（必填）'
+lemonaidea_text_imitation_edit_tips_b: '請將內容複製並貼上到此處'
+lemonaidea_text_imitation_edit_tips_c: '請輸入您的筆記類型'
+lemonaidea_text_imitation_edit_tips_d: '請在此輸入'
+lemonaidea_text_imitation_result: '結果'
+lemonaidea_btn_showall: '全文'
+
+
+ # fun_title_opt
+lemonaidea_title_improve_edit_tips_a: '請輸入您要優化的標題內容（必填）'
+lemonaidea_title_improve_edit_tips_b: '請複製並貼上標題至此處'
+
+
+#fun_content_opt
+lemonaidea_text_improve_edit_tips_a: '請輸入您要優化的文章內容（必填）'
+lemonaidea_text_improve_edit_tips_b: '請將內容複製並貼上到此處'
+
+ #limit_free
+lemonaidea_limited_free: '限時免費'
+lemonaidea_limited_free_title: '💡Tips'
+lemonaidea_limited_free_desc: '功能暫時免費開放，歡迎大家提供回饋'
+lemonaidea_limited_free_btn: '了解'
+
+#feedback
+lemonaidea_feedback: '回饋'
+lemonaidea_feedback_confirm: '確認'
+
+  #chance{
+lemonaidea_tips_chance: '還剩 '
+lemonaidea_tips_chance_two: '次'
+  #}
+
+ # all
+lemonaidea_toast_fail: '網路錯誤，請再試一次'
+
+#tabbar
+home: '首页'
+list: '列表'
+member: '我的'
+demo: '示例'
+
+#language
+en: '英文'
+zh: '中文'
+
+introduction: '一个快速开发vue3的移动端模板'
+#home
+support: '支持'
+cssMultiLanguage: 'css图片多语言'
+
+#list
+details: '列表详情'
+
+#btn
+confirm: '确认'
+cancel: '取消'
+
+ # tologin_pop_up: {
+lemonaidea_login_alert_desc_a: '如果您未登录，无法切换到4.0模式'
+lemonaidea_login_alert_desc_b: '登入解鎖更多機會'
+lemonaidea_login_alert_btn_go: '前往登入'
+  # },
+lemonaidea_login_alert_desc_c: '登录网站，可获得更多使用次数。登录后邀请好友，还可获得价值20美刀的4.0版本使用机会!'
+lemonaidea_invite_title: '免費解鎖4.0模式'
+lemonaidea_invite_alert_desc: ⚡️限時邀請活動:'
+lemonaidea_invite_alert_desc_one: '1、每當你邀請一位朋友成功登入後，你們都可以免費使用GPT4.0 '
+lemonaidea_invite_alert_desc_one_money: '（原價$20/月）'
+lemonaidea_invite_alert_desc_two: '2、每次邀請一位朋友，GPT4.0的每日使用次數增加10次；你最多可以邀請10位朋友。'
+lemonaidea_invite_desc_one: '您的專屬邀請連結 🔗 '
+lemonaidea_invite_desc: '來到Lemonaidea，體驗Lemon8筆記生成的魔法。通過 🔗'
+lemonaidea_invite_desc_left: ' 註冊並免費使用ChatGPT4.0'
+lemonaidea_invite_desc_outside: '來到Lemonaidea，體驗Lemon8筆記生成的魔法。通過 🔗 '
+lemonaidea_invite_desc_outside_left: '註冊並免費使用ChatGPT4.0'
+lemonaidea_invite_copy: '複製'
+lemonaidea_invite_link_login_subtitle: '💡註冊成功後，您和'
+lemonaidea_invite_link_login_subtitle_two: ' 都可以免費使用Chat GPT4.0⚡️'
+
+#隐私
+lemonaidea_privacy: '隱私政策'
+
+#验证码
+lemonaidea_login_code_sent_toast: '驗證碼已發送'
+leomaidea_login_verify_expired: '驗證碼已過期'
+leomaidea_login_verify_error: '驗證碼錯誤'
+lemonaidea_login_subtitle: '請輸入發送至 '
+lemonaidea_login_subtitle_left: '的代碼'
+
+lemonaidea_login_title_web: '加入Lemonaidea'
+
+lemonaidea_login_btn_web: '登入'
+lemonaidea_login_emailadress: '電子郵件地址'
+leomaidea_login_verify_code: '驗證碼'
+
+lemonaidea_invite_entrance_web: '免費解鎖GPT4.0'
+
+lemonaidea_login_policy: '繼續即表示您同意Lemonaidea的 '
+lemonaidea_login_policy_left: '.'
+
+lemonaidea_thinking: '思考中...'
+
+lemonidea_feedback_notice: '請輸入您的回饋'

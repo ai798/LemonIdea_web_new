@@ -1,13 +1,3 @@
 <template>
-	<router-view />
+	<router-view :key="$router.currentRoute.value.path" />
 </template>
-
-<style>
-/* a {
-	color: rgba(37, 99, 235);
-} */
-
-p {
-	padding: 0 10px;
-}
-</style>
