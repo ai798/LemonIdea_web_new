@@ -13,22 +13,22 @@ lemonaidea_login: "Add an account"
 lemonaidea_logout: "Log Out"
 #}
 #homepage: {
-lemonaidea_title_imitation: "Title Generation"
-lemonaidea_text_imitation: "Body Text Generation"
-lemonaidea_title_improve: "Title Optimization"
-lemonaidea_text_improve: "Body Text Optimization"
-lemonaidea_desc_title_imitation: "Quickly help you generate Lemon8 popular titles with one click"
-lemonaidea_desc_text_imitation: "Generate Lemon8 popular popular text with one click"
-lemonaidea_desc_title_improve: "Copy your title and optimize it quickly with one click"
-lemonaidea_desc_text_improve: "Copy your text  and generate popular content"
+lemonaidea_title_imitation: "Headline Generator"
+lemonaidea_text_imitation: "Caption Generator"
+lemonaidea_title_improve: "Headline Rewriter"
+lemonaidea_text_improve: "Caption Rewriter"
+lemonaidea_desc_title_imitation: "Create viral Lemon8 Headlines with AI Magic"
+lemonaidea_desc_text_imitation: "Create high-quality Lemon8 Captions with AI Magic"
+lemonaidea_desc_title_improve: "Quickly turn any headline into a click-worthy viral Lemon8 headline"
+lemonaidea_desc_text_improve: "Quickly turn any caption into a catchy viral Lemon8 caption"
 lemonaidea_btn_get_started:
   "Start Creating"
   # }
   #fun_opt_title: {
-lemonaidea_title_imitation_edit_tips_a: "Please enter the popular title of the same type that you want to learn from (required)"
-lemonaidea_title_imitation_edit_tips_b: "Please copy and paste the title here"
-lemonaidea_title_imitation_edit_tips_c: "Please enter your note type"
-lemonaidea_title_imitation_edit_tips_d: "Please enter here"
+lemonaidea_title_imitation_edit_tips_a: "Please describe the content of the post (required)"
+lemonaidea_title_imitation_edit_tips_b: "For example: The 10 most beautiful tourist destinations in Tokyo"
+lemonaidea_title_imitation_edit_tips_c: "Please describe the topic of the post (required)"
+lemonaidea_title_imitation_edit_tips_d: "For example: Seoul Spring Travel Guide"
 lemonaidea_btn_send: "Send"
 lemonaidea_title_imitation_result: "Results"
 lemonaidea_toast_copy_success: "Copied successfully"
@@ -39,7 +39,6 @@ lemonaidea_change:
   #fun_content_mock: {
 lemonaidea_text_imitation_edit_tips_a: "Please enter the popular content of the same type that you want to refer to (required)"
 lemonaidea_text_imitation_edit_tips_b: "Please copy and paste the text here"
-lemonaidea_text_imitation_edit_tips_c: "Please enter your note type"
 lemonaidea_text_imitation_edit_tips_d: "Please enter here"
 lemonaidea_text_imitation_result: "Results"
 lemonaidea_btn_showall:
@@ -151,3 +150,39 @@ lemonaidea_login_policy_left: "."
 lemonaidea_thinking: "Thinking..."
 
 lemonidea_feedback_notice: 'Please enter your feedback'
+
+
+lemonaidea_text_imitation_edit_tips_c: 'Tone of voice'
+lemonaidea_tone_of_voice_a: 'Friendly'
+lemonaidea_tone_of_voice_b: 'Professional'
+lemonaidea_tone_of_voice_c: 'Confident'
+lemonaidea_tone_of_voice_d: 'Exciting'
+lemonaidea_tone_of_voice_e: 'Engaging'
+lemonaidea_tone_of_voice_f: 'Conversational'
+lemonaidea_tone_of_voice_g: 'Formal'
+lemonaidea_tone_of_voice_h: 'Humorous'
+lemonaidea_tone_of_voice_i: 'Inspirational'
+lemonaidea_tone_of_voice_j: 'Persuasive'
+
+
+#页面seo
+
+lemonidea_title: 'Lemonaidea｜AI Writing Expert dedicated to Lemon8 creators'
+lemonidea_description: "Free Lemon8 AI Writing Expert. Use AI to generate high-quality popular Lemon8 post content and titles in seconds, and also optimize titles and post content."
+
+
+lemonidea_headlind_rewriter_title: "Lemon8 Headline Rewriter: Turn any text into a viral Lemon8 headline｜Lemonaidea"
+lemonidea_headlind_rewriter_description: "Elevate your social media game with Lemonaidea’s AI Lemon8 Healine Rewriter. Rewrite any text into a catchy and viral headline instantly, all powered by advanced AI."
+
+lemonidea_headlind_generator_title: "Lemon8 Headline Generator: Create viral Lemon8 Headlines with AI Magic｜Lemonaidea "
+lemonidea_headlind_generator_description: "Rapidly increase your social media influence with Lemonaidea's AI Headline Generator. Generate viral headlines quickly, all powered by advanced AI."
+
+lemonidea_caption_rewriter_title: "Lemon8 Caption Rewriter: Top AI Rewriter for Lemon8 Creators!｜Lemonaidea"
+lemonidea_caption_rewriter_description: "Explode your social media influence with Lemonaidea’s AI Caption Rewriter! Super powerful AI function easily helps you rewrite any text into a popular post"
+
+lemonidea_caption_generator_title: "Lemon8 Caption Generator: Create viral Lemon8 caption with AI Magic｜Lemonaidea"
+lemonidea_caption_generator_description: "Ignite your social media influence with Lemonaidea’s AI Caption Generator! Use powerful AI magic to quickly create popular Lemon8 posts"
+
+
+lemonidea_privacy_title: 'Lemonaidea｜Privacy Policy'
+lemonidea_privacy_description: 'Privacy Policy'

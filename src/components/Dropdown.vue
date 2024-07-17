@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { vOnClickOutside } from '@vueuse/components'
 import { useUserStore } from '@/store/modules/user'
+import { useRouter, useRoute } from 'vue-router'
 const userStore = useUserStore()
+const router = useRouter()
 const langs = ['English', 'ภาษาไทย', '日本語', '繁體中文', 'Malay']
 const visiable = ref(false)
 function dropdownHandler() {
@@ -20,6 +22,14 @@ const handleChangeLocal = (lang: any) => {
 	} else if (lang === langs[4]) {
 		locals = 'ma'
 	}
+	router.push(
+		router.currentRoute.value.fullPath.replace(
+			/\/(.*?)\//g,
+			'/' + locals + '/',
+		),
+	)
+	// (router.currentRoute.value.params = { lang: locals })
+	// router.value.currentRoute.params = { lang: locals }
 	userStore.setLang(locals)
 	locale.value = lang
 	visiable.value = false
@@ -114,6 +124,7 @@ const { availableLocales, locale } = useI18n()
 		left: 1258px;
 		padding: 8px;
 		border-radius: 6px;
+		background-color: #fff;
 	}
 	.dark [dark~='hover:bg-gray-500']:hover,
 	.hover\:bg-gray-500:hover,
@@ -127,7 +138,6 @@ const { availableLocales, locale } = useI18n()
 .bg-gray-500,
 .dark .dark\:bg-gray-500,
 .dark [dark~='bg-gray-500'] {
-	background-color: #fff;
 	overflow: hidden;
 }
 .dark [dark~='text-light-500'],
@@ -152,5 +162,9 @@ const { availableLocales, locale } = useI18n()
 .dark [dark~='hover:bg-gray-500']:hover,
 .hover\:bg-gray-500:hover {
 	background-color: #fff;
+}
+.dark [dark~='hover:bg-gray-500']:hover,
+.hover\:bg-gray-500:hover {
+	background-color: transparent;
 }
 </style>

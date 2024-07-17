@@ -14,22 +14,22 @@ lemonaidea_logout: 'ออกจากระบบ'
 #}
 
 #homepage
-lemonaidea_title_imitation: 'การสร้างชื่อเรื่อง'
-lemonaidea_text_imitation: 'การสร้างข้อความ'
-lemonaidea_title_improve: 'การเพิ่มประสิทธิภาพชื่อเรื่อง'
-lemonaidea_text_improve: 'การเพิ่มประสิทธิภาพข้อความเนื้อหา'
-lemonaidea_desc_title_imitation: 'ช่วยคุณสร้างชื่อยอดนิยมของ Lemon8 ได้อย่างรวดเร็วเพียงคลิกเดียว'
-lemonaidea_desc_text_imitation: 'สร้างการเขียนคำโฆษณา Lemon8 ได้ในคลิกเดียว คัดลอกและเผยแพร่'
-lemonaidea_desc_title_improve: 'คัดลอกชื่อของคุณและปรับให้เหมาะสมอย่างรวดเร็วเพียงคลิกเดียว'
-lemonaidea_desc_text_improve: 'คัดลอกผลงานของคุณและช่วยสร้างบทความยอดนิยม'
+lemonaidea_title_imitation: 'เครื่องกำเนิดพาดหัว'
+lemonaidea_text_imitation: 'เครื่องกำเนิดคำบรรยายภาพ'
+lemonaidea_title_improve: 'นักเขียนหัวเรื่องใหม่'
+lemonaidea_text_improve: 'นักเขียนคำบรรยายภาพใหม่'
+lemonaidea_desc_title_imitation: 'สร้างหัวข้อข่าวของ Lemon8 แบบไวรัลด้วย AI Magic'
+lemonaidea_desc_text_imitation: 'สร้างคำบรรยาย Lemon8 คุณภาพสูงด้วย AI Magic'
+lemonaidea_desc_title_improve: 'เปลี่ยนพาดหัวข่าวของ Lemon8 ให้เป็นพาดหัวไวรัลที่คุ้มค่ากับการคลิกอย่างรวดเร็ว'
+lemonaidea_desc_text_improve: 'เปลี่ยนคำบรรยายของ Lemon8 ให้เป็นคำบรรยายไวรัลที่ติดหูอย่างรวดเร็ว'
 lemonaidea_btn_get_started: 'เริ่มสร้าง'
 
 
 #fun_opt_title
-lemonaidea_title_imitation_edit_tips_a: 'กรุณากรอกชื่อยอดนิยมประเภทเดียวกันที่คุณต้องการเรียนรู้ (จำเป็น)'
-lemonaidea_title_imitation_edit_tips_b: 'กรุณาคัดลอกและวางชื่อที่นี่'
-lemonaidea_title_imitation_edit_tips_c: 'กรุณากรอกประเภทบันทึกย่อของคุณ'
-lemonaidea_title_imitation_edit_tips_d: 'กรุณากรอกที่นี่'
+lemonaidea_title_imitation_edit_tips_a: 'กรุณาอธิบายเนื้อหาของโพสต์ (จำเป็น)'
+lemonaidea_title_imitation_edit_tips_b: 'ตัวอย่างเช่น: 10 สถานที่ท่องเที่ยวที่สวยที่สุดในโตเกียว'
+lemonaidea_title_imitation_edit_tips_c: 'กรุณาอธิบายหัวข้อของโพสต์ (จำเป็น)'
+lemonaidea_title_imitation_edit_tips_d: 'ตัวอย่างเช่น: คู่มือการท่องเที่ยวโซลสปริง'
 lemonaidea_btn_send: 'ส่ง'
 lemonaidea_title_imitation_result: 'ผลลัพธ์'
 lemonaidea_toast_copy_success: 'คัดลอกเรียบร้อยแล้ว'
@@ -39,7 +39,6 @@ lemonaidea_change: 'เปลี่ยนมัน'
  # fun_content_mock
 lemonaidea_text_imitation_edit_tips_a: 'กรุณากรอกเนื้อหายอดนิยมประเภทเดียวกันกับที่คุณต้องการอ้างอิง (จำเป็น)'
 lemonaidea_text_imitation_edit_tips_b: 'กรุณาคัดลอกและวางเนื้อหาที่นี่'
-lemonaidea_text_imitation_edit_tips_c: 'กรุณากรอกประเภทบันทึกย่อของคุณ'
 lemonaidea_text_imitation_edit_tips_d: 'กรุณากรอกที่นี่'
 lemonaidea_text_imitation_result: 'ผลลัพธ์'
 lemonaidea_btn_showall: 'ทั้งหมด'
@@ -141,3 +140,40 @@ lemonaidea_login_policy_left: " ของLemonaidea."
 lemonaidea_thinking: 'กำลังคิด...'
 
 lemonidea_feedback_notice: 'กรุณากรอกความคิดเห็นของคุณ'
+
+
+lemonaidea_text_imitation_edit_tips_c: 'โทนเสียง'
+lemonaidea_tone_of_voice_a: 'เป็นกันเอง'
+lemonaidea_tone_of_voice_b: 'มืออาชีพ'
+lemonaidea_tone_of_voice_c: 'มั่นใจ'
+lemonaidea_tone_of_voice_d: 'น่าตื่นเต้น'
+lemonaidea_tone_of_voice_e: 'มีส่วนร่วม'
+lemonaidea_tone_of_voice_f: 'การสนทนา'
+lemonaidea_tone_of_voice_g: 'เป็นทางการ'
+lemonaidea_tone_of_voice_h: 'มีอารมณ์ขัน'
+lemonaidea_tone_of_voice_i: 'สร้างแรงบันดาลใจ'
+lemonaidea_tone_of_voice_j: 'โน้มน้าวใจ'
+
+
+
+#页面seo
+
+lemonidea_title: "Lemonaidea｜ผู้เชี่ยวชาญด้านการเขียน AI ที่อุทิศให้กับผู้สร้าง Lemon8"
+lemonidea_description: "ฟรีผู้เชี่ยวชาญด้านการเขียน Lemon8 AI ใช้ AI เพื่อสร้างเนื้อหาและชื่อเรื่องโพสต์ Lemon8 ยอดนิยมคุณภาพสูงในไม่กี่วินาที และยังเพิ่มประสิทธิภาพชื่อเรื่องและเนื้อหาโพสต์อีกด้วย"
+
+
+lemonidea_headlind_rewriter_title: "นักเขียนพาดหัวข่าว Lemon8: ใช้ AI เพื่อเขียนชื่อใหม่ให้เป็นชื่อยอดนิยมอย่างรวดเร็ว｜Lemonaidea"
+lemonidea_headlind_rewriter_description: "จุดประกายการปรากฏตัวของโซเชียลมีเดียของคุณด้วยความสามารถในการเขียนพาดหัวข่าว AI ของ Lemonaidea! เขียนข้อความใหม่ให้เป็นพาดหัวข่าว Lemon8 ที่สะดุดตา"
+
+lemonidea_headlind_generator_title: "เครื่องกำเนิดพาดหัว Lemon8: ใช้เวทมนตร์ AI เพื่อสร้างเกม Lemon8 ยอดนิยมฟรี｜Lemonaidea"
+lemonidea_headlind_generator_description: "เพิ่มอิทธิพลบนโซเชียลมีเดียของคุณอย่างรวดเร็วด้วย AI Headline Generator ของ Lemonaidea สร้างหัวข้อข่าวไวรัลอย่างรวดเร็ว ทั้งหมดนี้ขับเคลื่อนโดย AI ขั้นสูง"
+
+lemonidea_caption_rewriter_title: "นักเขียนคำบรรยาย Lemon8: นักเขียน AI ชั้นนำสำหรับผู้สร้าง Lemon8!｜Lemonaidea"
+lemonidea_caption_rewriter_description: "ใช้เครื่องมือเขียนโพสต์ใหม่ด้วย AI ของ Lemonaidea เพื่อดึงดูดความสนใจบน Lemon8 อย่างรวดเร็ว! ฟังก์ชัน AI ที่ทรงพลังเป็นพิเศษช่วยให้คุณเขียนข้อความใหม่ลงในโพสต์ยอดนิยมได้อย่างง่ายดาย"
+
+lemonidea_caption_generator_title: "การสร้างคำบรรยาย Lemon8: ใช้ AI เพื่อสร้างโพสต์ Lemon8 ยอดนิยมอย่างรวดเร็ว｜Lemonaidea"
+lemonidea_caption_generator_description: "จุดประกายอิทธิพลบนโซเชียลมีเดียของคุณด้วย AI Caption Generator ของ Lemonaidea! ใช้เวทมนตร์ AI อันทรงพลังเพื่อสร้างโพสต์ Lemon8 ยอดนิยมอย่างรวดเร็ว"
+
+
+lemonidea_privacy_title: 'Lemonaidea｜นโยบายความเป็นส่วนตัว'
+lemonidea_privacy_description: 'นโยบายความเป็นส่วนตัว'

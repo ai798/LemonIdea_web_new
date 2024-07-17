@@ -15,6 +15,10 @@
 					alt=""
 				/>
 			</div>
+			<div class="icon-box" @click="handleGoToLemon">
+				<img class="small-icon" src="@/assets/logolemon.jpg" alt="" />
+				<span>lemon8</span>
+			</div>
 			<div class="icon-box" @click="handleOpenPrivacy">
 				<img class="small-icon" src="@/assets/privacy.jpg" alt="" />
 				<span>{{ $t('lemonaidea_privacy') }}</span>
@@ -126,6 +130,7 @@ import { googleLogout } from 'vue3-google-login'
 import { useUserStore } from '@/store/modules/user'
 import { vOnClickOutside } from '@vueuse/components'
 import emitter from '@/utils/mitt'
+const { locale, t } = useI18n()
 const date = new Date()
 
 const year = date.getFullYear()
@@ -152,7 +157,6 @@ const buttonRef = ref()
 const popoverRef = ref()
 const visible = ref(false)
 const router = useRouter()
-const { t } = useI18n()
 const user = computed(() => {
 	return window.localStorage.getItem('user')
 		? JSON.parse(window.localStorage.getItem('user') ?? '')
@@ -183,11 +187,30 @@ const handleSendFB = () => {
 const handleGoToIns = () => {
 	window.open('https://www.instagram.com/lemonaidea')
 }
-const handleOpenPrivacy = () => {
-	router.push('/privacy')
+const handleGoToLemon = () => {
+	window.open('https://v.lemon8-app.com/s/ThTfbdspR')
 }
+
 const handleGoHome = () => {
 	router.push('/')
+}
+const langs = ['English', 'ภาษาไทย', '日本語', '繁體中文', 'Malay']
+const locals = computed(() => {
+	// let localLan = window.localStorage.getItem("lemon_web_lang");
+	if (locale.value === langs[0]) {
+		return 'en'
+	} else if (locale.value === langs[1]) {
+		return 'th'
+	} else if (locale.value === langs[2]) {
+		return 'ja'
+	} else if (locale.value === langs[3]) {
+		return 'zh-hk'
+	} else if (locale.value === langs[4]) {
+		return 'ma'
+	}
+})
+const handleOpenPrivacy = () => {
+	router.push(`/${locals.value}/privacy`)
 }
 const handleClickUser = () => {}
 const handleLogout = () => {

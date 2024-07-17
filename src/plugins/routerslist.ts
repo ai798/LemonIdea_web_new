@@ -13,8 +13,8 @@ export const routes = [
 			},
 			//内容页
 			{
-				name: 'title_paraphrasing',
-				path: `/:lang/title_paraphrasing`,
+				name: 'lemon8-headline-generator',
+				path: `/:lang/lemon8-headline-generator`,
 				component: () => import('@/components/content/index.vue'),
 				children: [
 					{
@@ -54,8 +54,8 @@ export const routes = [
 				},
 			},
 			{
-				name: 'bodyText_paraphrasing',
-				path: '/:lang/bodyText_paraphrasing',
+				name: 'lemon8-caption-generator',
+				path: '/:lang/lemon8-caption-generator',
 				component: () => import('@/components/content/index.vue'),
 				children: [
 					{
@@ -95,8 +95,8 @@ export const routes = [
 				},
 			},
 			{
-				name: 'title_optimization',
-				path: '/:lang/title_optimization',
+				name: 'lemon8-headline-rewriter',
+				path: '/:lang/lemon8-headline-rewriter',
 				children: [
 					{
 						// 当 /user/:id/profile 匹配成功
@@ -136,8 +136,8 @@ export const routes = [
 				},
 			},
 			{
-				name: 'bodyText_optimization',
-				path: '/:lang/bodyText_optimization',
+				name: 'lemon8-caption-rewriter',
+				path: '/:lang/lemon8-caption-rewriter',
 				children: [
 					{
 						// 当 /user/:id/profile 匹配成功
@@ -208,13 +208,50 @@ export const routes = [
 	},
 	//隐私政策
 	{
-		path: '/privacy',
+		name: 'privacy',
+		path: '/:lang/privacy',
 		component: () => import('@/components/privacy/privacy.vue'),
-		meta: {
-			title: 'lemonaidea',
-			keepAlive: true,
-		},
+		// children: [
+		// 	{
+		// 		// 当 /user/:id/profile 匹配成功
+		// 		// UserProfile 将被渲染到 User 的 <router-view> 内部
+		// 		path: 'en',
+		// 		component: () => import('@/components/privacy/privacy.vue'),
+		// 	},
+		// 	{
+		// 		// 当 /user/:id/profile 匹配成功
+		// 		// UserProfile 将被渲染到 User 的 <router-view> 内部
+		// 		path: 'th',
+		// 		component: () => import('@/components/privacy/privacy.vue'),
+		// 	},
+		// 	{
+		// 		// 当 /user/:id/profile 匹配成功
+		// 		// UserProfile 将被渲染到 User 的 <router-view> 内部
+		// 		path: 'ja',
+		// 		component: () => import('@/components/privacy/privacy.vue'),
+		// 	},
+		// 	{
+		// 		// 当 /user/:id/profile 匹配成功
+		// 		// UserProfile 将被渲染到 User 的 <router-view> 内部
+		// 		path: 'zh-cn',
+		// 		component: () => import('@/components/privacy/privacy.vue'),
+		// 	},
+		// 	{
+		// 		// 当 /user/:id/profile 匹配成功
+		// 		// UserProfile 将被渲染到 User 的 <router-view> 内部
+		// 		path: 'ma',
+		// 		component: () => import('@/components/privacy/privacy.vue'),
+		// 	},
+		// ],
 	},
+	// {
+	// 	path: '/privacy',
+	// 	component: () => import('@/components/privacy/privacy.vue'),
+	// 	meta: {
+	// 		title: 'lemonaidea',
+	// 		keepAlive: true,
+	// 	},
+	// },
 	{
 		// 找不到路由重定向到404页面
 		path: '/:pathMatch(.*)',

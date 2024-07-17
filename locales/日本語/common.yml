@@ -17,18 +17,18 @@ lemonaidea_title_imitation: 'タイトル生成'
 lemonaidea_text_imitation: 'テキストの生成'
 lemonaidea_title_improve: 'タイトルの最適化'
 lemonaidea_text_improve: '本文の最適化'
-lemonaidea_desc_title_imitation: 'ワンクリックで Lemon8 の人気タイトルを素早く生成できます'
-lemonaidea_desc_text_imitation: 'ワンクリックで Lemon 8のコピーライティングを生成し、コピーして公開します'
-lemonaidea_desc_title_improve: 'タイトルをコピーして、ワンクリックですばやく最適化します'
-lemonaidea_desc_text_improve: 'あなたの作品をコピーして人気記事の生成に貢献してください'
+lemonaidea_desc_title_imitation: 'AI を使って Lemon8 のヒットタイトルを素早く作成'
+lemonaidea_desc_text_imitation: 'AI を使って、高品質の人気のある Lemon8 投稿を素早く作成'
+lemonaidea_desc_title_improve: 'AI を使って、書いたLemon8のタイトルを素早くヒットタイトルにリライト'
+lemonaidea_desc_text_improve: 'AI を使って、書いたLemon8 の投稿を目を素早く、目を引く投稿にリライト'
 lemonaidea_btn_get_started: '作成を開始する'
 
 
 #fun_opt_title
-lemonaidea_title_imitation_edit_tips_a: '学びたい同じジャンルの人気のタイトルを入力してください (必須)'
-lemonaidea_title_imitation_edit_tips_b: 'ここにタイトルをコピーして貼り付けてください'
-lemonaidea_title_imitation_edit_tips_c: 'メモの種類を入力してください'
-lemonaidea_title_imitation_edit_tips_d: 'ここに入力してください'
+lemonaidea_title_imitation_edit_tips_a: '投稿内容をご記入ください（必須）'
+lemonaidea_title_imitation_edit_tips_b: '例：東京旅行で必ず訪れたい場所10選'
+lemonaidea_title_imitation_edit_tips_c: '投稿の内容トピックを説明してください (必須)'
+lemonaidea_title_imitation_edit_tips_d: '例: ロサンゼルス旅行ガイド'
 lemonaidea_btn_send: '送信'
 lemonaidea_title_imitation_result: '結果'
 lemonaidea_toast_copy_success: '正常にコピーされました'
@@ -37,7 +37,6 @@ lemonaidea_change: 'それを変更'
 #fun_content_mock
 lemonaidea_text_imitation_edit_tips_a: '参考にしたい同種の人気コンテンツをご入力ください（必須）'
 lemonaidea_text_imitation_edit_tips_b: 'ここに内容をコピーして貼り付けてください'
-lemonaidea_text_imitation_edit_tips_c: 'メモの種類を入力してください'
 lemonaidea_text_imitation_edit_tips_d: 'ここに入力してください'
 lemonaidea_text_imitation_result: '結果'
 lemonaidea_btn_showall: '全て'
@@ -135,3 +134,37 @@ lemonaidea_login_policy_left: ' に同意したことになります。'
 lemonaidea_thinking: '考え...'
 
 lemonidea_feedback_notice: 'フィードバックを入力してください'
+
+lemonaidea_text_imitation_edit_tips_c: '表現力豊かな音色'
+lemonaidea_tone_of_voice_a: 'フレンドリー'
+lemonaidea_tone_of_voice_b: 'プロ'
+lemonaidea_tone_of_voice_c: '自信を持って'
+lemonaidea_tone_of_voice_d: '興奮した'
+lemonaidea_tone_of_voice_e: 'とても魅力的な'
+lemonaidea_tone_of_voice_f: '親切的'
+lemonaidea_tone_of_voice_g: 'フォーマル'
+lemonaidea_tone_of_voice_h: 'ユーモア'
+lemonaidea_tone_of_voice_i: 'モチベーションを高める、インスピレーションを与える'
+lemonaidea_tone_of_voice_j: '説得力のある'
+
+#页面seo
+
+lemonidea_title: 'Lemonaidea｜Lemon8クリエイター専属のAIライティング専門家'
+lemonidea_description: "無料の Lemon8 人工知能コピーライティングの専門家。 AI を使用して高品質な Lemon8 の人気投稿コンテンツとタイトルを生成し、タイトルと投稿コンテンツを最適化します。"
+
+
+lemonidea_headlind_rewriter_title: "Lemon8 タイトルの最適化: あらゆるコピーを Lemon8 の人気タイトルに書き換えます｜Lemonaidea"
+lemonidea_headlind_rewriter_description: "Lemonaidea の AI 見出し書き換え機能でソーシャル メディアでの存在感を高めましょう!あらゆるテキストを目を引くLemon8見出しに変換します"
+
+lemonidea_headlind_generator_title: "Lemon8 タイトル生成ツール: 人気の Lemon8 タイトルを無料で作成｜Lemonaidea"
+lemonidea_headlind_generator_description: "Lemonaidea の AI ヘッドライン ジェネレーターを使用して、ソーシャル メディアでの存在感をすばやく高めます。人気の見出しを素早く生成"
+
+lemonidea_caption_rewriter_title: "Lemon8 投稿の最適化: 任意のテキストを Lemon8 の人気投稿に書き換えます｜Lemonaidea"
+lemonidea_caption_rewriter_description: "Lemonaidea の AI ポスト最適化ツールを使用して、Lemon8 ですぐに注目を集めましょう。超強力な AI 機能で、どんなテキストも簡単に人気の投稿に書き換えることができます"
+
+lemonidea_caption_generator_title: "Lemon8 の投稿生成: AI を使用して人気のある Lemon8 の投稿を迅速に作成する｜Lemonaidea"
+lemonidea_caption_generator_description: "Lemonaidea の AI 投稿生成ツールでソーシャル メディアの影響力を高めましょう!強力な AI マジックを使用して、人気のある Lemon8 投稿をすばやく作成します"
+
+
+lemonidea_privacy_title: 'Lemonaidea｜プライバシーポリシー'
+lemonidea_privacy_description: 'プライバシーポリシー'

@@ -13,22 +13,22 @@ lemonaidea_logout: "Keluar"
 #}
 
 #homepage
-lemonaidea_title_imitation: "Pembuatan Judul"
-lemonaidea_text_imitation: "Pembuatan Teks Badan"
-lemonaidea_title_improve: "Optimisasi Judul"
-lemonaidea_text_improve: "Optimisasi Teks Badan"
-lemonaidea_desc_title_imitation: "Bantu Anda dengan cepat menghasilkan judul populer Lemon8 dengan sekali klik"
-lemonaidea_desc_text_imitation: "Hasilkan teks populer Lemon8 dengan sekali klik"
-lemonaidea_desc_title_improve: "Salin judul Anda dan optimalkan dengan cepat dengan sekali klik"
-lemonaidea_desc_text_improve: "Salin teks Anda dan hasilkan konten populer"
+lemonaidea_title_imitation: "Penjana Tajuk"
+lemonaidea_text_imitation: "Penjana Kapsyen"
+lemonaidea_title_improve: "Penulis Semula Tajuk"
+lemonaidea_text_improve: "Penulis Semula Kapsyen"
+lemonaidea_desc_title_imitation: "Cipta Tajuk Lemon8 yang viral dengan AI Magic"
+lemonaidea_desc_text_imitation: "Cipta Kapsyen Lemon8 berkualiti tinggi dengan AI Magic"
+lemonaidea_desc_title_improve: "Tukar mana-mana tajuk Lemon8 dengan pantas menjadi tajuk viral yang layak diklik"
+lemonaidea_desc_text_improve: "Cepat tukar mana-mana kapsyen Lemon8 menjadi kapsyen viral yang menarik"
 lemonaidea_btn_get_started: "Mulai Membuat"
 
 #fun_opt_title
-lemonaidea_title_imitation_edit_tips_a: "Silakan masukkan judul populer jenis yang ingin Anda pelajari (wajib)"
-lemonaidea_title_imitation_edit_tips_b: "Silakan salin dan tempelkan judul di sini  "
-lemonaidea_title_imitation_edit_tips_c: "Silakan masukkan jenis catatan Anda"
-lemonaidea_title_imitation_edit_tips_d: "Silakan masukkan di sini"
-lemonaidea_btn_send: "Kirim"
+lemonaidea_title_imitation_edit_tips_a: "Sila terangkan kandungan siaran (diperlukan)"
+lemonaidea_title_imitation_edit_tips_b: "Contohnya: 10 destinasi pelancongan tercantik di Tokyo  "
+lemonaidea_title_imitation_edit_tips_c: "Sila terangkan topik siaran (diperlukan)"
+lemonaidea_title_imitation_edit_tips_d: "Contohnya: Panduan Perjalanan Musim Bunga Seoul"
+lemonaidea_btn_send: "Menjana"
 lemonaidea_title_imitation_result: "Hasil"
 lemonaidea_toast_copy_success: "Berhasil disalin"
 lemonaidea_change:
@@ -37,7 +37,6 @@ lemonaidea_change:
   # fun_content_mock
 lemonaidea_text_imitation_edit_tips_a: "Silakan masukkan konten populer jenis yang ingin Anda lihat (wajib)"
 lemonaidea_text_imitation_edit_tips_b: "Silakan salin dan tempelkan teks di sini"
-lemonaidea_text_imitation_edit_tips_c: "Silakan masukkan jenis catatan Anda"
 lemonaidea_text_imitation_edit_tips_d: "Silakan masukkan di sini"
 lemonaidea_text_imitation_result: "Hasil"
 lemonaidea_btn_showall: "Semua"
@@ -137,3 +136,37 @@ lemonaidea_login_policy_left: " Lemonaidea."
 lemonaidea_thinking: 'Berfikir...'
 
 lemonidea_feedback_notice: 'Sila masukkan maklum balas anda'
+
+
+lemonaidea_text_imitation_edit_tips_c: 'Nada suara'
+lemonaidea_tone_of_voice_a: 'mesra'
+lemonaidea_tone_of_voice_b: 'Profesional'
+lemonaidea_tone_of_voice_c: 'Yakin'
+lemonaidea_tone_of_voice_d: 'Mengujakan'
+lemonaidea_tone_of_voice_e: 'Menarik'
+lemonaidea_tone_of_voice_f: 'Perbualan'
+lemonaidea_tone_of_voice_g: 'Rasmi'
+lemonaidea_tone_of_voice_h: 'berjenaka'
+lemonaidea_tone_of_voice_i: 'Berinspirasi'
+lemonaidea_tone_of_voice_j: 'Memujuk'
+
+#页面seo
+
+lemonidea_title: 'Pakar penulisan Lemonaidea｜AI khusus untuk pencipta Lemon8'
+lemonidea_description: "Pakar Penulisan AI Lemon8 Percuma. Gunakan AI untuk menjana siaran dan tajuk Lemon8 popular berkualiti tinggi dalam beberapa saat, dan juga mengoptimumkan tajuk dan kandungan siaran."
+
+lemonidea_headlind_rewriter_title: "Penulis Semula Tajuk Lemon8: Tulis semula mana-mana salinan dengan pantas menjadi tajuk popular｜Lemonaidea"
+lemonidea_headlind_rewriter_description: "Nyalakan kehadiran media sosial anda dengan keupayaan menulis semula tajuk AI Lemonaidea! Tulis semula sebarang teks ke dalam tajuk utama Lemon8 yang menarik perhatian"
+
+lemonidea_headlind_generator_title: "Penjana Tajuk Lemon8: Cipta Tajuk Lemon8 yang viral dengan AI Magic｜Lemonaidea"
+lemonidea_headlind_generator_description: "Tingkatkan pengaruh media sosial anda dengan pantas dengan Penjana Tajuk AI Lemonaidea. Hasilkan tajuk berita dengan pantas, semuanya dikuasakan oleh AI lanjutan."
+
+lemonidea_caption_rewriter_title: "Penulis Semula Kapsyen Lemon8: Penulis Semula AI Teratas untuk Pencipta Lemon8!｜Lemonaidea"
+lemonidea_caption_rewriter_description: "Ledakan pengaruh media sosial anda dengan Penulis Semula Kapsyen AI Lemonaidea! Fungsi AI super berkuasa dengan mudah membantu anda menulis semula sebarang teks ke dalam siaran popular"
+
+lemonidea_caption_generator_title: "Penjanaan kapsyen Lemon8: Gunakan AI untuk membuat siaran Lemon8 yang popular dengan cepat｜Lemonaidea"
+lemonidea_caption_generator_description: "Nyalakan pengaruh media sosial anda dengan Penjana Kapsyen AI Lemonaidea! Gunakan sihir AI yang berkuasa untuk membuat siaran Lemon8 yang popular dengan cepat"
+
+
+lemonidea_privacy_title: 'Lemonaidea｜Dasar Privasi'
+lemonidea_privacy_description: 'Dasar Privasi'
